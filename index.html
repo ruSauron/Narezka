@@ -1,0 +1,14 @@
+<html>
+  <form id="osn">
+  <textarea id="mytext" placeholder="Вставлять сюда" autofocus></textarea>
+      <input id="btnclear" type="button" onclick="document.getElementById('mytext').value='';" value="X" title="Очистить поле ввода"/>
+    <input id="btnpaste" type="button" value="Вставить" onclick="paste('mytext');"/>
+  <br/>
+  <input type="number" id="num" value="4950" placeholder="По сколько символов нарезать" title="По сколько символов нарезать"/>
+  <input type="number" id="num2" value="20" placeholder="Перекрывать на символов" title="Перекрывать на символов"/>
+  <br/>
+  <input id="btndo" type="button" value="Разбить" onclick="trim();"/>
+  </form>
+  <form id="dop"></form>
+  <p>Нажмите на кнопку с цифрами, чтобы скопировать фрагмент. Цифры - длина фрагмента. </p>
+</html>
